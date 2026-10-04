@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Laksh Nagpal | Backend Developer</title>
+  <meta name="description" content="Personal website of Laksh Nagpal, a backend developer and B.Tech CSE student at IIIT Guwahati.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ url_for('index') }}">Laksh Nagpal</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a class="active" href="/" aria-current="page">Home</a></li>
+          <li><a href="/about">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main">
+    <section class="hero container" aria-labelledby="hero-title">
+      <p class="hero-role">Backend Developer</p>
+      <h1 id="hero-title">Laksh Nagpal</h1>
+      <p class="hero-summary">
+        I build full-stack web applications with Node.js, Express and MongoDB,
+      </p>
+      <div class="hero-actions">
+        <a class="button" href="{{ url_for('static', filename='resume.pdf') }}" download>Download resume</a>
+        <a class="button button-secondary" href="/contact">Get in touch</a>
+      </div>
+    </section>
+
+    <section class="container section" aria-labelledby="stats-title">
+      <h2 id="stats-title">Problem solving</h2>
+      <dl class="stats">
+        <div class="stat">
+          <dt>LeetCode max rating</dt>
+          <dd>1655</dd>
+        </div>
+        <div class="stat">
+          <dt>Best LeetCode contest rank</dt>
+          <dd>2771</dd>
+        </div>
+        <div class="stat">
+          <dt>Codeforces max rating</dt>
+          <dd>1160</dd>
+        </div>
+        <div class="stat">
+          <dt>DSA problems solved</dt>
+          <dd>550+</dd>
+        </div>
+      </dl>
+    </section>
+
+    <section class="container section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Key skills</h2>
+      <ul class="tags">
+        <li>Node.js</li>
+        <li>Express</li>
+        <li>React</li>
+        <li>MongoDB</li>
+        <li>MySQL</li>
+        <li>Redis</li>
+        <li>JWT</li>
+        <li>REST APIs</li>
+        <li>Docker</li>
+        <li>AWS</li>
+        <li>Python</li>
+        <li>Java</li>
+        <li>C++</li>
+        <li>SQL</li>
+      </ul>
+      <p class="section-link"><a href="/about">See the projects and the full skill list</a></p>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Laksh Nagpal</p>
+      <p>Guwahati, India</p>
+    </div>
+  </footer>
+</body>
+</html>

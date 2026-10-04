@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Laksh Nagpal</title>
+  <meta name="description" content="Education, projects and skills of Laksh Nagpal.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="{{ url_for('static', filename='style.css') }}">
+</head>
+<body>
+  <a class="skip-link" href="#main">Skip to content</a>
+
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="{{ url_for('index') }}">Laksh Nagpal</a>
+      <nav aria-label="Main navigation">
+        <ul class="nav-list">
+          <li><a href="/">Home</a></li>
+          <li><a class="active" href="/about" aria-current="page">About</a></li>
+          <li><a href="/contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="main" class="container">
+    <h1 class="page-title">About</h1>
+
+    <section class="section" aria-labelledby="projects-title">
+      <h2 id="projects-title">Projects</h2>
+
+      <article class="job">
+        <header class="job-header">
+          <h3 class="job-title">ShopNest AI</h3>
+          <p class="job-company">AI-Powered E-Commerce Platform &middot; Lead Developer</p>
+          <p class="job-dates"><time datetime="2026-05">May 2026</time> to present</p>
+        </header>
+        <ul class="job-details">
+          <li>Developing a full-stack AI-powered e-commerce platform with user authentication, product management, shopping cart and order management.</li>
+          <li>Building RESTful APIs with Express.js and MongoDB, following the MVC architecture for a scalable backend.</li>
+          <li>Integrating Redis to cache frequently accessed data, improving performance and reducing database load.</li>
+          <li>Implementing secure online payments through the Razorpay payment gateway.</li>
+          <li>Working on AI-powered product recommendations for personalized shopping.</li>
+        </ul>
+        <ul class="tags tags-small" aria-label="Technologies used">
+          <li>Node.js</li><li>MongoDB</li><li>Redis</li><li>JWT</li><li>Tailwind CSS</li><li>Express</li><li>React</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header class="job-header">
+          <h3 class="job-title">Interview AI</h3>
+          <p class="job-company">AI-Powered Resume &amp; Job Description Analyzer &middot; Lead Developer</p>
+          <p class="job-dates"><time datetime="2026-06">Jun 2026</time> to present (in progress)</p>
+        </header>
+        <ul class="job-details">
+          <li>Developing an application that analyzes resumes against job descriptions to identify skill gaps and measure candidate-job compatibility.</li>
+          <li>Building a resume parsing pipeline that extracts technical skills, education, projects and work experience from uploaded resumes.</li>
+          <li>Implementing AI-based semantic comparison between resumes and job descriptions to generate a personalized skill-gap analysis.</li>
+          <li>Designing a personalized learning roadmap that recommends skills and creates structured study schedules for the target job role.</li>
+          <li>Developing an interactive dashboard to visualize resume insights, match scores and recommended learning paths.</li>
+        </ul>
+        <ul class="tags tags-small" aria-label="Technologies used">
+          <li>React.js</li><li>Node.js</li><li>Express.js</li><li>MongoDB</li><li>LLM APIs</li><li>REST API</li>
+        </ul>
+      </article>
+
+      <article class="job">
+        <header class="job-header">
+          <h3 class="job-title">Blogify</h3>
+          <p class="job-company">Blog Application &middot; Lead Developer</p>
+          <p class="job-dates"><time datetime="2026-05">May 2026</time></p>
+        </header>
+        <ul class="job-details">
+          <li>Developed a full-stack blog application where users can create, edit, delete and view posts.</li>
+          <li>Implemented user authentication and authorization with JWT for protected routes.</li>
+          <li>Built RESTful APIs with Express.js and MongoDB to manage users and blog content.</li>
+          <li>Designed a responsive interface for content creation and browsing.</li>
+          <li>Structured the backend with the MVC architecture for better organization and maintainability.</li>
+        </ul>
+        <ul class="tags tags-small" aria-label="Technologies used">
+          <li>Node.js</li><li>Express</li><li>MongoDB</li><li>JWT</li><li>REST API</li>
+        </ul>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="education-title">
+      <h2 id="education-title">Education</h2>
+      <article class="job">
+        <header class="job-header">
+          <h3 class="job-title">B.Tech in Computer Science Engineering</h3>
+          <p class="job-company">Indian Institute of Information Technology Guwahati</p>
+          <p class="job-dates"><time datetime="2024-08">Aug 2024</time> to <time datetime="2028-05">May 2028</time> (expected)</p>
+        </header>
+        <p class="education-meta"><strong>CPI:</strong> 7.72</p>
+        <p class="education-meta"><strong>Core subjects:</strong> Operating Systems, OOPS, DSA, DBMS, Computer Networks, Machine Learning (basics)</p>
+      </article>
+    </section>
+
+    <section class="section" aria-labelledby="achievements-title">
+      <h2 id="achievements-title">Achievements</h2>
+      <ul class="plain-list">
+        <li>JEE Mains 2024: 98.56 percentile overall, 99.01 percentile in Physics</li>
+        <li>Max rating of 1160 on Codeforces and 1655 on LeetCode</li>
+        <li>Highest LeetCode contest rank: 2771</li>
+        <li>Solved 550+ Data Structures and Algorithms problems across LeetCode, GeeksforGeeks and Codeforces</li>
+      </ul>
+    </section>
+
+    <section class="section" aria-labelledby="skills-title">
+      <h2 id="skills-title">Skills</h2>
+      <dl class="skills-grid">
+        <div class="skill-group">
+          <dt>Programming languages</dt>
+          <dd>
+            <ul class="tags tags-small">
+              <li>Python</li><li>Java</li><li>C</li><li>C++</li><li>JavaScript</li><li>SQL</li><li>HTML</li><li>CSS</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>Frameworks &amp; libraries</dt>
+          <dd>
+            <ul class="tags tags-small">
+              <li>Node.js</li><li>Express</li><li>Docker</li><li>Tailwind CSS</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>Databases</dt>
+          <dd>
+            <ul class="tags tags-small">
+              <li>MongoDB</li><li>MySQL</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>CS core subjects</dt>
+          <dd>
+            <ul class="tags tags-small">
+              <li>OS</li><li>OOPS</li><li>DSA</li><li>DBMS</li><li>CN</li><li>ML (basics)</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>Tools &amp; platforms</dt>
+          <dd>
+            <ul class="tags tags-small">
+              <li>Git</li><li>GitHub</li><li>Postman</li><li>VS Code</li><li>IntelliJ IDEA</li><li>AWS</li>
+            </ul>
+          </dd>
+        </div>
+        <div class="skill-group">
+          <dt>Soft skills</dt>
+          <dd>
+            <ul class="tags tags-small">
+              <li>Communication</li><li>Leadership</li><li>Problem solving</li><li>Prompt engineering</li>
+            </ul>
+          </dd>
+        </div>
+      </dl>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-inner">
+      <p>&copy; 2026 Laksh Nagpal</p>
+      <p>Guwahati, India</p>
+    </div>
+  </footer>
+</body>
+</html>
